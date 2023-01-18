@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Simple Tailwind Starter</title>
 </head>
-<body>
+<body class="bg-purple-200">
 
-    <main class="container mx-auto">
-        <button id="press-button" class="px-8 py-4 border bg-sky-500 border-sky-800">Generate</button>
-        <p id="result"></p>
+    <main class="container mx-auto flex flex-col items-center">
+        <h1 class="text-3xl font-extrabold mt-5">Random Password Generator</h1>
+        <p id="result" class="my-5 w-1/2 h-9 text-center font-semibold"></p>
+        <!-- <div class="w-1/2 mx-auto"> -->
+            <button id="press-button" class="w-60 mx-auto px-8 py-4 border bg-sky-500 border-sky-800 font-bold">Generate</button>
+        <!-- </div> -->
     </main>
     <script src="js/main.js"></script>
 </body>

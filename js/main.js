@@ -6,7 +6,7 @@ pressButton.addEventListener('click', randomize)
 
 function randomize(){
     let randomChar = '';    
-    for(let i=0; i <= 12; i++){
+    for(let i=0; i < 12; i++){
         randomChar += characters.charAt(Math.floor(Math.random() * characters.length));
     }
     return output.innerHTML = randomChar;
